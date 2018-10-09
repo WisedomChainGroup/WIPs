@@ -1,0 +1,4 @@
+{% assign wips=include.wips|split:"," %}
+{% for wipnum in wips %}
+  <a href="{{wipnum|strip|prepend:"wip-" }}">{{wipnum|strip}}</a>{% if forloop.last == false %}, {% endif %}
+{% endfor %}

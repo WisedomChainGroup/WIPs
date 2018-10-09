@@ -1,0 +1,7 @@
+---
+layout: page
+title: WRC
+---
+
+{% assign wips=site.pages|where:"type","Standards Track"|where:"category","WRC" %}
+{% include wiptable.html wips=wips %}
