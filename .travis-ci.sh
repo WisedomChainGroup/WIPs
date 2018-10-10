@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e # halt script on error
 
-HTMLPROOFER_OPTIONS="./_site --internal-domains=eips.ethereum.org --check-html --check-opengraph --report-missing-names --log-level=:debug --assume-extension --empty-alt-ignore --timeframe=6w --url-ignore=/EIPS/wip-1,EIPS/wip-1"
+HTMLPROOFER_OPTIONS="./_site --internal-domains=eips.ethereum.org --check-html --check-opengraph --report-missing-names --log-level=:debug --assume-extension --empty-alt-ignore --timeframe=6w --url-ignore=/WIPs/wip-1,WIPs/wip-1"
 
 if [[ $TASK = 'htmlproofer' ]]; then
   bundle exec jekyll doctor
@@ -15,13 +15,13 @@ elif [[ $TASK = 'htmlproofer-external' ]]; then
   bundle exec jekyll build
   bundle exec htmlproofer $HTMLPROOFER_OPTIONS --external_only
 elif [[ $TASK = 'eip-validator' ]]; then
-  BAD_FILES="$(ls EIPS | egrep -v "wip-[0-9]+.md|wip-20-token-standard.md")" || true
+  BAD_FILES="$(ls WIPS | egrep -v "wip-[0-9]+.md|wip-20-token-standard.md")" || true
   if [[ ! -z $BAD_FILES ]]; then
     echo "Files found with invalid names:"
     echo $BAD_FILES
     exit 1
   fi
 
-  FILES="$(ls EIPS/*.md | egrep "wip-[0-9]+.md")"
+  FILES="$(ls WIPS/*.md | egrep "wip-[0-9]+.md")"
   bundle exec eip_validator $FILES
 fi

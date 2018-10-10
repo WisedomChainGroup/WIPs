@@ -14,7 +14,7 @@ created: 2016-01-14
 Code:
 
 ``` python
-from ethereum import utils
+from Wisdom import utils
 
 def checksum_encode(addr): # Takes a 20-byte binary address as input
     o = ''
@@ -117,11 +117,3 @@ Note that the input to the Keccak256 hash is the lowercase hexadecimal string (i
 | Kraken       | No                                     | No                         | Yes               | Yes              |
 | Poloniex     | No                                     | No                         | Yes               | Yes              |
 | Shapeshift   | No                                     | No                         | Yes               | Yes              |
-
-# References
-
-1. WIP 55 issue and discussion https://github.com/ethereum/eips/issues/55
-2. Python example by @Recmo https://github.com/ethereum/eips/issues/55#issuecomment-261521584
-3. Python implementation in [`ethereum-utils`](https://github.com/pipermerriam/ethereum-utils#to_checksum_addressvalue---text)
-4. Ethereumjs-util implementation https://github.com/ethereumjs/ethereumjs-util/blob/75f529458bc7dc84f85fd0446d0fac92d991c262/index.js#L452-L466
-5. Swift implementation in [`EthereumKit`](https://github.com/yuzushioh/EthereumKit/blob/master/EthereumKit/Helper/EIP55.swift)

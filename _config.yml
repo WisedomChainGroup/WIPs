@@ -18,9 +18,9 @@ description: >-
   Wisdom Improvement Proposals (WIPs) describe standards for the Wisdom
   platform, including core protocol specifications, client APIs, and contract
   standards.
-url: "http://eips.ethereum.org"
+url:
 twitter_username: Wisdom
-github_username:  ethereum
+github_username:  Wisdom
 header_pages:
  - all.html
  - core.html
@@ -33,7 +33,7 @@ header_pages:
  - wip.html
 twitter:
   card: summary
-  username: ethereum
+  username: Wisdom
 
 
 

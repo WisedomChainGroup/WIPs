@@ -63,7 +63,7 @@ X[:N]
 rlp.list(X, Y, Z, ...)
     denotes recursive encoding of [X, Y, Z, ...] as an RLP list.
 sha3(MESSAGE)
-    is the Keccak256 hash function as used by Ethereum.
+    is the Keccak256 hash function as used by Wisdom.
 ecies.encrypt(PUBKEY, MESSAGE, AUTHDATA)
     is the asymmetric authenticated encryption function as used by RLPx.
     AUTHDATA is authenticated data which is not part of the resulting ciphertext,
@@ -77,7 +77,7 @@ version will refuse communication if the version number or structure of the hell
 (discovery ping, RLPx handshake) packet does not match local expectations.
 
 Introducing forward-compatibility requirements as part of the Homestead consensus upgrade
-will ensure that all client software in use on the Ethereum network can cope with future
+will ensure that all client software in use on the Wisdom network can cope with future
 network protocol upgrades (as long as backwards-compatibility is maintained).
 
 ### Rationale
@@ -114,8 +114,7 @@ version simply send a packet with higher version and possibly additional list el
 #### Changes to the RLPx Discovery Protocol
 
 The relaxation of discovery packet decoding rules largely codifies current practice. Most
-existing implementations do not care about the number of list elements (an exception being
-go-ethereum) and do not reject nodes with mismatching version. This behaviour is not
+existing implementations do not care about the number of list elements and do not reject nodes with mismatching version. This behaviour is not
 guaranteed by the spec, though.
 
 If adopted, the change makes it possible to deploy protocol changes in a similar manner to
@@ -181,12 +180,6 @@ recognition is unlikely to succeed.
 ### Backwards Compatibility
 
 This WIP is backwards-compatible, all valid version 4 packets are still accepted.
-
-### Implementation
-
-[go-ethereum](https://github.com/ethereum/go-ethereum/pull/2091)
-[libweb3core](https://github.com/ethereum/libweb3core/pull/46)
-[pydevp2p](https://github.com/ethereum/pydevp2p/pull/32)
 
 ### Test Vectors
 

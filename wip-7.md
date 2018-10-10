@@ -9,9 +9,6 @@ category: Consensus
 created: 2015-11-15
 ---
 
-### Hard Fork
-[Homestead](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-606.md)
-
 ### Parameters
 - Activation:
   - Block >= 1,150,000 on Mainnet

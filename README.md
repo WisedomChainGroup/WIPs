@@ -11,7 +11,7 @@ People wishing to submit WIPs, do as belows
 1. Review WIP-1.
 2. Fork the repository by clicking "Fork" in the top right.
 3. Add your WIP to your fork of the repository. There is a template WIP here.
-4. Submit a Pull Request to Ethereum's EIPs repository.
+4. Submit a Pull Request to Wisdom's WIPs repository.
 
 Having a WIP here does not make it a formally accepted stardard until its status becomes Final or Active.Your first PR should be a first draft of the final WIP. we will manually review the draft and assign it a number.  
 

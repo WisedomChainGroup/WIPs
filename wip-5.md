@@ -12,7 +12,7 @@ created: 2015-11-22
 ### Abstract
 
 This WIP makes it possible to call functions that return strings and other dynamically-sized arrays.
-Currently, when another contract / function is called from inside the Ethereum Virtual Machine,
+Currently, when another contract / function is called from inside the Wisdom Virtual Machine,
 the size of the output has to be specified in advance. It is of course possible to give a larger
 size, but gas also has to be paid for memory that is not written to, which makes returning
 dynamically-sized data both costly and inflexible to the extent that it is actually unusable.
@@ -65,7 +65,7 @@ size of the output after the call.
 
 ### Rationale
 
-This way of dealing with the problem requires a minimal change to the Ethereum Virtual Machine.
+This way of dealing with the problem requires a minimal change to the Wisdom Virtual Machine.
 Other means of achieving a similar goal would have changed the opcodes themselves or
 the number of their arguments. Another possibility would have been to only change the
 gas mechanics if `output_size` is equal to `2**256-1`. Since the main difficulty in the
@@ -75,8 +75,6 @@ this would not have been a simplification.
 At an earlier stage, it was proposed to also add the size of the returned data on the stack,
 but the `MSIZE` mechanism described above should be sufficient and is much better
 backwards compatible.
-
-Some comments are available at https://github.com/ethereum/EIPs/issues/8
 
 ### Backwards Compatibility
 

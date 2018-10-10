@@ -1,4 +1,4 @@
-When opening a pull request to submit a new WIP, please use the suggested template: https://github.com/ethereum/EIPs/blob/master/eip-X.md
+When opening a pull request to submit a new WIP, please use the suggested template: https://github.com/WisedomChainGroup/WIPs/blob/master/wip-X.md
 
 We have a GitHub bot that automatically merges some PRs. It will merge yours immediately if certain criteria are met:
 
