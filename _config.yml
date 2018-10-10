@@ -56,11 +56,14 @@ defaults:
 
 
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - node_modules
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
   - wip-X.md
+  - WIPS/
 
 repository: ethereum/ethereum.github.io

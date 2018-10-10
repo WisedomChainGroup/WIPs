@@ -1,6 +1,7 @@
 ---
 wip: 1  
 title: WIP Purpose and Guidelines  
+author: cc
 status: Active  
 type: Meta  
 created:2018-8-1
