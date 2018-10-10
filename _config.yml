@@ -64,6 +64,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - wip-X.md
-  - WIPS/
 
 repository: ethereum/ethereum.github.io
