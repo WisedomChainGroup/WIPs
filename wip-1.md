@@ -4,8 +4,7 @@ title: WIP Purpose and Guidelines
 author: cc
 status: Active  
 type: Meta  
-created:2018-8-1
-
+created: 2018-8-1
 ---
 
 ## What is an WIP?
