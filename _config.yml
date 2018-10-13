@@ -19,7 +19,6 @@ description: >-
   platform, including core protocol specifications, client APIs, and contract
   standards.
 url:
-twitter_username: Wisdom
 github_username:  Wisdom
 header_pages:
  - all.html
@@ -31,9 +30,7 @@ header_pages:
  - interface.html
  - meta.html
  - wip.html
-twitter:
-  card: summary
-  username: Wisdom
+
 
 
 
@@ -65,4 +62,4 @@ exclude:
   - vendor/ruby/
   - wip-X.md
 
-repository: ethereum/ethereum.github.io
+repository: WisedomChainGroup/WisedomChainGroup.github.io
