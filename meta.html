@@ -3,5 +3,5 @@ layout: page
 title: Meta
 ---
 
-{% assign wips=site.pages|where:"type","Meta" %}
+{% assign wips=site.pages|where:"type","Standards Track"|where:"category","Meta" %}
 {% include wiptable.html wips=wips %}

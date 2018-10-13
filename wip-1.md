@@ -1,9 +1,11 @@
 ---
+layout: wip
 wip: 1  
 title: WIP Purpose and Guidelines  
-author: cc
+author: cc <cc@cc.com>
 status: Active  
-type: Meta  
+type: Standards Track
+category: Meta  
 created: 2018-8-1
 ---
 
