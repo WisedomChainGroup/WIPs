@@ -2,7 +2,7 @@
 layout: wip
 wip: 1  
 title: WIP Purpose and Guidelines  
-author: cc <cc@cc.com>
+author: wisdomadmin < wise_cc@outlook.com>
 status: Active  
 type: Standards Track
 category: Meta  
